@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examples — Binacore</title>
+<meta name="description" content="OpenSees reference models rebuilt in Binacore Desktop, with the numbers side by side.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Binacore">
+<meta property="og:title" content="Examples — Binacore">
+<meta property="og:description" content="OpenSees reference models rebuilt in Binacore Desktop, with the numbers side by side.">
+<meta property="og:url" content="https://bbapir.github.io/binacore-PublicWebsite/examples.html">
+<meta property="og:image" content="https://bbapir.github.io/binacore-PublicWebsite/images/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="brand/binacore-app-icon.svg">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="page-examples">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="logo" href="index.html" aria-label="Binacore, home"><img src="brand/binacore-logo-tile.svg" width="350" height="72" alt="Binacore"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-item"><a class="nav-top" href="desktop.html">Products<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="desktop.html">Binacore Desktop</a><a href="app.html">Binacore App</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="applications.html">Applications<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="applications.html#buildings">Buildings</a><a href="applications.html#bridges">Bridges</a><a href="applications.html#special-structures">Special structures</a><a href="applications.html#geotechnical">Geotechnical and underground</a><a href="applications.html#seismic-isolation">Seismic isolation and damping</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="get-started.html" aria-current="page">Get started<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="install.html">Install</a><a href="first-steps.html">First steps</a><a href="tutorials.html">Tutorials</a><a href="examples.html">Examples</a><a href="faq.html">FAQ</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="about.html">About<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="about.html">About Binacore</a><a href="reliability.html">Reliability</a><a href="contact.html">Contact</a></div></div></div></div>
+      <a class="btn btn--ink btn--small" href="download.html">Download</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero hero--plain" style="padding-bottom:clamp(2.5rem,5vw,4.5rem)">
+  <div class="wrap hero__in">
+    <div>
+      <span class="kicker">Examples</span>
+      <h1 style="margin-top:1.375rem">Verified against reference models</h1>
+      <p class="lede">The reference models of the OpenSeesPy documentation, rebuilt in Binacore Desktop and compared number by number.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <ul class="examples">
+      <li><h2>Concrete frame under gravity</h2><p>A portal frame with fibre sections under its gravity load.</p><dl><dt>Compared</dt><dd>Vertical displacements of the beam–column joints</dd><dt>Agreement</dt><dd>Nine significant figures or better</dd></dl></li>
+      <li><h2>Concrete frame, pushover</h2><p>The same frame pushed to a roof displacement of 15 in.</p><dl><dt>Compared</dt><dd>Base shear at five roof displacements</dd><dt>Agreement</dt><dd>Nine significant figures or better</dd></dl></li>
+      <li><h2>Concrete frame under a ground motion</h2><p>The same frame through a nonlinear time history.</p><dl><dt>Compared</dt><dd>Roof displacement at its peak and at five instants</dd><dt>Agreement</dt><dd>Nine significant figures or better</dd></dl></li>
+      <li><h2>Cantilever under a ground motion</h2><p>A single column with a mass at its tip.</p><dl><dt>Compared</dt><dd>Tip displacement at its peak and at five instants</dd><dt>Agreement</dt><dd>Nine significant figures or better</dd></dl></li>
+      <li><h2>Moment–curvature of a concrete section</h2><p>A fibre section under axial load, bent step by step.</p><dl><dt>Compared</dt><dd>Moment at every one of 100 steps</dd><dt>Agreement</dt><dd>Nine significant figures or better</dd></dl></li>
+      <li><h2>Response spectrum with rigid floors</h2><p>A 3D frame with rigid diaphragms.</p><dl><dt>Compared</dt><dd>The first five periods and the floor mode shapes</dd><dt>Agreement</dt><dd>Periods to nine figures or better, mode shapes to five</dd></dl></li>
+    </ul>
+    <p class="form-note" style="margin-top:2rem;max-width:74ch">Where an example uses a recorded earthquake, both runs use the same substitute motion. The frame and the cantilever ship with the program, under File, Examples.</p>
+  </div>
+</section>
+
+<section class="sec sec--mist closing">
+  <div class="wrap">
+    <h2>And checked by hand</h2>
+    <p class="lede">Each kind of analysis is also compared with a theoretical solution.</p>
+    <div class="actions"><a class="btn btn--ink" href="reliability.html">How Binacore is checked</a></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap site-footer__in">
+    <div class="site-footer__brand">
+      <a href="index.html" aria-label="Binacore, home"><img src="brand/binacore-logo-tile-light.svg" width="350" height="72" alt="Binacore"></a>
+      <p>Advanced structural analysis on your desk<br>Reinforced concrete design in your pocket</p>
+      <ul class="site-footer__social" aria-label="Binacore on social media"><li><span>LinkedIn</span></li><li><span>YouTube</span></li><li><span>Instagram</span></li><li><span>Facebook</span></li></ul>
+      
+    </div>
+    <nav aria-label="Products"><h2>Products</h2><a href="desktop.html">Binacore Desktop</a><a href="app.html">Binacore App</a><a href="applications.html">Applications</a></nav>
+    <nav aria-label="Get started"><h2>Get started</h2><a href="download.html">Download</a><a href="install.html">Install</a><a href="first-steps.html">First steps</a><a href="tutorials.html">Tutorials</a><a href="examples.html">Examples</a><a href="faq.html">FAQ</a></nav>
+    <nav aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="reliability.html">Reliability</a><a href="contact.html">Contact</a></nav>
+    <p class="site-footer__legal">© 2026 Binacore</p>
+  </div>
+</footer>
+<script defer src="js/site.js"></script>
+</body>
+</html>

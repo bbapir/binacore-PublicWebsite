@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reliability — accuracy you can trust</title>
+<meta name="description" content="How Binacore is checked: design rules read from the code at the clause, results compared with theoretical solutions, independent hand calculations and OpenSees reference models.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Binacore">
+<meta property="og:title" content="Reliability — accuracy you can trust">
+<meta property="og:description" content="How Binacore is checked: design rules read from the code at the clause, results compared with theoretical solutions, independent hand calculations and OpenSees reference models.">
+<meta property="og:url" content="https://bbapir.github.io/binacore-PublicWebsite/reliability.html">
+<meta property="og:image" content="https://bbapir.github.io/binacore-PublicWebsite/images/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="brand/binacore-app-icon.svg">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="page-reliability">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="logo" href="index.html" aria-label="Binacore, home"><img src="brand/binacore-logo-tile.svg" width="350" height="72" alt="Binacore"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr">Menu</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <div class="nav-item"><a class="nav-top" href="desktop.html">Products<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="desktop.html">Binacore Desktop</a><a href="app.html">Binacore App</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="applications.html">Applications<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="applications.html#buildings">Buildings</a><a href="applications.html#bridges">Bridges</a><a href="applications.html#special-structures">Special structures</a><a href="applications.html#geotechnical">Geotechnical and underground</a><a href="applications.html#seismic-isolation">Seismic isolation and damping</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="get-started.html">Get started<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="install.html">Install</a><a href="first-steps.html">First steps</a><a href="tutorials.html">Tutorials</a><a href="examples.html">Examples</a><a href="faq.html">FAQ</a></div></div></div></div>
+      <div class="nav-item"><a class="nav-top" href="about.html" aria-current="page">About<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><div class="nav-panel"><div class="nav-panel__box"><div class="nav-panel__list"><a href="about.html">About Binacore</a><a href="reliability.html">Reliability</a><a href="contact.html">Contact</a></div></div></div></div>
+      <a class="btn btn--ink btn--small" href="download.html">Download</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero hero--plain">
+  <div class="wrap hero__in">
+    <div>
+      <span class="kicker">Reliability</span>
+      <h1 style="margin-top:1.375rem">Accuracy you can trust</h1>
+      <p class="lede">Engineering software earns trust the way engineers do: by showing where every number comes from, and by checking it against something independent.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--mist">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2>Every rule from the code, at the clause</h2>
+      <p class="lede">A design rule enters Binacore in three steps.</p>
+    </div>
+    <ol class="steps3 steps3--white">
+      <li data-in><h3>Read</h3><p>The rule is read in the design code itself, at its clause.</p></li>
+      <li data-in><h3>Cite</h3><p>The clause is recorded in the software, beside the rule it governs.</p></li>
+      <li data-in><h3>Show</h3><p>The check on your screen and in your report names that clause.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="pin-intro pin-intro--light" style="background:var(--white)">
+  <div class="wrap">
+    <h2>Every analysis checked before it ships</h2>
+    <p class="lede">An answer counts when a second, independent answer agrees with it.</p>
+  </div>
+</div>
+<section class="pin pin--light pin--short pin--white" data-moment="check" aria-label="How an analysis is checked">
+  <div class="pin__stage"><canvas aria-hidden="true"></canvas></div>
+  <div class="pin__steps">
+    <article class="step"><img class="step__still" src="images/steps/check-0.webp" width="1200" height="900" loading="lazy" alt=""><div class="step__text"><h3>First, the reference</h3><p>The result is worked out independently: from structural theory, or from a reference model.</p></div></article>
+    <article class="step"><img class="step__still" src="images/steps/check-1.webp" width="1200" height="900" loading="lazy" alt=""><div class="step__text"><h3>Then the program</h3><p>The same problem is run in Binacore.</p></div></article>
+    <article class="step"><img class="step__still" src="images/steps/check-2.webp" width="1200" height="900" loading="lazy" alt=""><div class="step__text"><h3>Then the comparison</h3><p>The two must agree within a stated tolerance. The comparison stays in the test suite and runs again with every change.</p></div></article>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <h2>What the results are compared with</h2>
+    <ul class="list-plain">
+      <li>Theoretical solutions<span>Results from structural mechanics, for each kind of analysis and each element, support and connection in Binacore Desktop.</span></li>
+      <li>Classical plate theory<span>The plate model behind every two-way slab.</span></li>
+      <li>Independent hand calculations<span>Every kind of member in Binacore App, written out independently of the app and compared line by line.</span></li>
+      <li>OpenSees reference models<span>The models of the OpenSees documentation, rebuilt in Binacore and compared with the originals, run unchanged.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec--mist">
+  <div class="wrap duo">
+    <div class="plate plate--white" data-in>
+      <h2>The code stays the code</h2>
+      <p>No text, table or figure of any design code is reproduced in the app or on this site. You work with your own copy; we tell you which clause to open.</p>
+    </div>
+    <div class="plate plate--white" data-in="2">
+      <h2>The engineer stays the engineer</h2>
+      <p>Binacore does the arithmetic and shows its work. The judgement, and the responsibility, remain with a qualified engineer.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="credit">
+      <h2>Credit where it is due: OpenSees</h2>
+      <div>
+        <p>Every analysis in Binacore Desktop is run by OpenSees, the Open System for Earthquake Engineering Simulation, developed at the University of California, Berkeley.</p>
+        <small>OpenSees © The Regents of the University of California. OpenSeesPy © Minjie Zhu.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--mist closing">
+  <div class="wrap">
+    <h2>See it for yourself</h2>
+    <div class="actions"><a class="btn btn--ink" href="download.html">Download</a></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap site-footer__in">
+    <div class="site-footer__brand">
+      <a href="index.html" aria-label="Binacore, home"><img src="brand/binacore-logo-tile-light.svg" width="350" height="72" alt="Binacore"></a>
+      <p>Advanced structural analysis on your desk<br>Reinforced concrete design in your pocket</p>
+      <ul class="site-footer__social" aria-label="Binacore on social media"><li><span>LinkedIn</span></li><li><span>YouTube</span></li><li><span>Instagram</span></li><li><span>Facebook</span></li></ul>
+      
+    </div>
+    <nav aria-label="Products"><h2>Products</h2><a href="desktop.html">Binacore Desktop</a><a href="app.html">Binacore App</a><a href="applications.html">Applications</a></nav>
+    <nav aria-label="Get started"><h2>Get started</h2><a href="download.html">Download</a><a href="install.html">Install</a><a href="first-steps.html">First steps</a><a href="tutorials.html">Tutorials</a><a href="examples.html">Examples</a><a href="faq.html">FAQ</a></nav>
+    <nav aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="reliability.html">Reliability</a><a href="contact.html">Contact</a></nav>
+    <p class="site-footer__legal">© 2026 Binacore</p>
+  </div>
+</footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="js/stage.js"></script>
+<script defer src="js/moments.js"></script>
+<script defer src="js/site.js"></script>
+</body>
+</html>
